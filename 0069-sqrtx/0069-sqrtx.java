@@ -7,8 +7,10 @@ class Solution {
             if(x/mid==mid)  return mid;
             else if(x/mid<mid) 
                 high=mid-1;
-            else {low = mid+1;
-                  ans = mid;}
+            else {
+                low = mid+1;
+                ans=mid;
+                 }
         }
         return ans;
     }
