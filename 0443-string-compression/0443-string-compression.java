@@ -1,6 +1,6 @@
 class Solution {
     public int compress(char[] chars) {
-        int indexAns = 0, index = 0;
+         int indexAns = 0, index = 0;
         while(index < chars.length){
             char currentChar = chars[index];
             int count = 0;
@@ -13,6 +13,6 @@ class Solution {
                 for(char c : Integer.toString(count).toCharArray()) 
                     chars[indexAns++] = c;
         }
-        return indexAns;
+        return indexAns;                
     }
-    }
+}
